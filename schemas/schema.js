@@ -6,6 +6,9 @@ import schemaTypes from "all:part:@sanity/base/schema-type"
 
 // Imports
 import product from "./product"
+import productImage from "./productImage"
+import category from "./category"
+import head from "./head"
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -13,5 +16,5 @@ export default createSchema({
   name: "default",
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([product]),
+  types: schemaTypes.concat([product, productImage, category, head]),
 })
