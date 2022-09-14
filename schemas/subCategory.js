@@ -1,8 +1,8 @@
 import { BsSquareHalf } from "react-icons/bs"
 
 export default {
-  name: "category",
-  title: "Category",
+  name: "subCategory",
+  title: "Sub Category",
   description: "",
   type: "document",
   icon: BsSquareHalf,
@@ -34,14 +34,14 @@ export default {
       type: "text",
     },
     {
-      name: "subCategories",
-      title: "Sub Categories",
+      name: "products",
+      title: "Products",
       type: "array",
       of: [
         {
           type: "reference",
           to: {
-            type: "subCategory",
+            type: "product",
           },
         },
       ],
