@@ -19,6 +19,21 @@ export default {
       type: "text",
     },
     {
+      name: "details",
+      title: "Details",
+      type: "text",
+    },
+    {
+      name: "highlights",
+      title: "Highlights",
+      type: "array",
+      of: [
+        {
+          type: "string",
+        },
+      ],
+    },
+    {
       name: "color",
       title: "Color",
       type: "string",
@@ -46,6 +61,34 @@ export default {
       name: "reference",
       title: "Reference",
       type: "string",
+      validation: (rule) => rule.required(),
+    },
+    {
+      name: "sizes",
+      title: "Sizes",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: {
+            type: "size",
+          },
+        },
+      ],
+      validation: (rule) => rule.required(),
+    },
+    {
+      name: "colors",
+      title: "Colors",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: {
+            type: "color",
+          },
+        },
+      ],
       validation: (rule) => rule.required(),
     },
     {

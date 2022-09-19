@@ -10,6 +10,8 @@ import productImage from "./productImage"
 import category from "./category"
 import subCategory from "./subCategory"
 import head from "./head"
+import size from "./size"
+import color from "./color"
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,6 +24,8 @@ export default createSchema({
     productImage,
     category,
     head,
+    size,
     subCategory,
+    color,
   ]),
 })
