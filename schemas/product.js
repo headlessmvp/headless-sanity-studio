@@ -34,8 +34,8 @@ export default {
       ],
     },
     {
-      name: "color",
-      title: "Color",
+      name: "caption",
+      title: "Caption",
       type: "string",
       validation: (rule) => rule.required(),
     },
