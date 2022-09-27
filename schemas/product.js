@@ -40,24 +40,6 @@ export default {
       validation: (rule) => rule.required(),
     },
     {
-      name: "price",
-      title: "Price",
-      type: "number",
-      validation: (rule) => rule.required(),
-    },
-    {
-      name: "currency",
-      title: "Currency",
-      type: "string",
-      validation: (rule) => rule.required(),
-    },
-    {
-      name: "slug",
-      title: "Slug",
-      type: "string",
-      validation: (rule) => rule.required(),
-    },
-    {
       name: "reference",
       title: "Reference",
       type: "string",
