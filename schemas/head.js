@@ -108,5 +108,11 @@ export default {
         },
       ],
     },
+    {
+      name: "saleText",
+      title: "Sale Section Text",
+      type: "string",
+      validation: (rule) => rule.required(),
+    },
   ],
 }
