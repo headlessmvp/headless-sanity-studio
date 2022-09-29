@@ -34,6 +34,12 @@ export default {
       type: "text",
     },
     {
+      name: "image",
+      title: "Image",
+      type: "image",
+      validation: (rule) => rule.required(),
+    },
+    {
       name: "products",
       title: "Products",
       type: "array",
