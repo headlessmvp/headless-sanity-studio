@@ -9,6 +9,8 @@ import product from "./product"
 import productImage from "./productImage"
 import headImage from "./headImage"
 import category from "./category"
+import collection from "./collection"
+
 import subCategory from "./subCategory"
 import head from "./head"
 import size from "./size"
@@ -25,6 +27,7 @@ export default createSchema({
     productImage,
     headImage,
     category,
+    collection,
     head,
     size,
     subCategory,
