@@ -114,5 +114,31 @@ export default {
       type: "string",
       validation: (rule) => rule.required(),
     },
+    {
+      name: "sale",
+      title: "Sale Products",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: {
+            type: "product",
+          },
+        },
+      ],
+    },
+    {
+      name: "collection",
+      title: "Collection Products",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: {
+            type: "product",
+          },
+        },
+      ],
+    },
   ],
 }
