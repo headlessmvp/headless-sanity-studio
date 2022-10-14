@@ -1,9 +1,9 @@
 import { BsFillImageFill } from "react-icons/bs"
 
 export default {
-  name: "productImage",
-  title: "Product Image",
-  description: "",
+  name: "social",
+  title: "Social",
+  description: "This is a social with a link",
   type: "document",
   icon: BsFillImageFill,
   fields: [
@@ -14,14 +14,9 @@ export default {
       validation: (rule) => rule.required(),
     },
     {
-      name: "description",
-      title: "Description",
-      type: "text",
-    },
-    {
-      name: "images",
-      title: "Images",
-      type: "image",
+      name: "url",
+      title: "URL",
+      type: "string",
       validation: (rule) => rule.required(),
     },
   ],

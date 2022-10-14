@@ -82,32 +82,7 @@ export default {
       type: "image",
       validation: (rule) => rule.required(),
     },
-    {
-      name: "categories",
-      title: "Categories",
-      type: "array",
-      of: [
-        {
-          type: "reference",
-          to: {
-            type: "category",
-          },
-        },
-      ],
-    },
-    {
-      name: "favourites",
-      title: "Favourites",
-      type: "array",
-      of: [
-        {
-          type: "reference",
-          to: {
-            type: "product",
-          },
-        },
-      ],
-    },
+
     {
       name: "saleText",
       title: "Sale Section Text",
@@ -115,30 +90,18 @@ export default {
       validation: (rule) => rule.required(),
     },
     {
-      name: "sale",
-      title: "Sale Products",
+      name: "socials",
+      title: "Socials",
       type: "array",
       of: [
         {
           type: "reference",
           to: {
-            type: "product",
+            type: "social",
           },
         },
       ],
-    },
-    {
-      name: "collection",
-      title: "Collection Products",
-      type: "array",
-      of: [
-        {
-          type: "reference",
-          to: {
-            type: "product",
-          },
-        },
-      ],
+      validation: (rule) => rule.required().max(4),
     },
   ],
 }

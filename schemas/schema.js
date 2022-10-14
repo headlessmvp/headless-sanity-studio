@@ -5,15 +5,9 @@ import createSchema from "part:@sanity/base/schema-creator"
 import schemaTypes from "all:part:@sanity/base/schema-type"
 
 // Imports
-import product from "./product"
-import productImage from "./productImage"
 import headImage from "./headImage"
-import category from "./category"
-
-import subCategory from "./subCategory"
 import head from "./head"
-import size from "./size"
-import color from "./color"
+import social from "./social"
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -21,14 +15,5 @@ export default createSchema({
   name: "default",
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([
-    product,
-    productImage,
-    headImage,
-    category,
-    head,
-    size,
-    subCategory,
-    color,
-  ]),
+  types: schemaTypes.concat([headImage, head, social]),
 })
