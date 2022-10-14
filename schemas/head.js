@@ -103,5 +103,11 @@ export default {
       ],
       validation: (rule) => rule.required().max(4),
     },
+    {
+      name: "footerText",
+      title: "Footer Text",
+      type: "string",
+      validation: (rule) => rule.required(),
+    },
   ],
 }
