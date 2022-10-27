@@ -7,6 +7,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type"
 // Imports
 import headImage from "./headImage"
 import head from "./head"
+import campaign from "./campaign"
 import social from "./social"
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -15,5 +16,5 @@ export default createSchema({
   name: "default",
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([headImage, head, social]),
+  types: schemaTypes.concat([headImage, head, social, campaign]),
 })

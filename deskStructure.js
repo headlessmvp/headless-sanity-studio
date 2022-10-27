@@ -13,6 +13,10 @@ export default () =>
             .items([
               S.listItem().title("Websites").child(S.documentTypeList("head")),
               S.listItem()
+                .title("Campaigns")
+                .child(S.documentTypeList("campaign")),
+
+              S.listItem()
                 .title("Media")
                 .child(S.documentTypeList("headImage")),
               S.listItem()
