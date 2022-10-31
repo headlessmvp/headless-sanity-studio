@@ -19,7 +19,18 @@ export default {
       type: "string",
       validation: (rule) => rule.required(),
     },
-
+    {
+      name: "logoText",
+      title: "Logo Text",
+      type: "string",
+      validation: (rule) => rule.required(),
+    },
+    {
+      name: "logo",
+      title: "Logo Image",
+      type: "image",
+      validation: (rule) => rule.required(),
+    },
     {
       name: "headline",
       title: "Headline",
